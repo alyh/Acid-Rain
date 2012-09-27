@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, MainMenuActivity!</string>
+    <string name="app_name">Acid Rain</string>
+    <string name="main_play">PLAY</string>
+    <string name="main_garden">Stats</string>
+    <string name="main_store">Shop</string>
+    <drawable name="main_button_color">#8075d4fb</drawable>
+    <drawable name="main_button_click">#ff75d4fb</drawable>
+    <drawable name="night_button_color">#80a759a2</drawable>
+    <drawable name="night_button_click">#ffa759a2</drawable>
+    <drawable name="sunrise_button_color">#80a0aed1</drawable>
+    <drawable name="sunrise_button_click">#ffa0aed1</drawable>
+    <drawable name="sunset_button_color">#80893800</drawable>
+    <drawable name="sunset_button_click">#ff893800</drawable>
+
+</resources>

@@ -1,0 +1,13 @@
+4
+night
+500
+false
+sunset
+1000
+false
+sunrise
+1500
+false
+day
+0
+true

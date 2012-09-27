@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical" android:layout_gravity="center_horizontal" android:padding="10dp">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center"
+        android:text="ACID RAIN"
+        android:textSize="48dp" android:paddingTop="40dp" android:paddingBottom="50dp"
+        android:textColor="#ffffff" android:shadowColor="#000000" android:shadowDx="2" android:shadowDy="1" android:shadowRadius="2"/>
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="left"
+        android:background="@drawable/buttonback"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/main_play"
+        android:textSize="35dp"/>
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/garden"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonback"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/main_garden"
+                android:textSize="24dp" android:drawableTop="@drawable/stats"/>
+            
+              <Button
+                android:id="@+id/help"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonback"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="Help"
+                android:textSize="24dp" android:drawableTop="@drawable/help" android:layout_marginLeft="10dp"/>
+       
+
+            <Button
+                android:id="@+id/shop"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonback"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="Theme"
+                android:textSize="24dp" android:drawableTop="@drawable/theme"/>
+        </TableRow>
+
+    </TableLayout>
+   
+</LinearLayout>

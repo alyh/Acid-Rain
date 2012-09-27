@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical" android:layout_gravity="center_horizontal">
+
+     <TextView
+        android:id="@+id/coins"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="COINS: "
+        android:textSize="25dp" android:paddingTop="20dp"
+        android:textColor="#ffffff" android:paddingLeft="40dp"
+        android:shadowColor="#000000" android:shadowDx="2" android:shadowDy="1" android:shadowRadius="2"/>
+
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="1000 coins each. Tap to purchase."
+         android:textColor="#ffffff" android:textSize="14dp" android:layout_marginLeft="15dp"/>
+
+   		<Button
+   		    android:id="@+id/day"   		   
+   		    android:background="@drawable/banner_day2"
+   		    android:layout_width="match_parent"
+   		    android:layout_height="wrap_content"
+   		    android:text="Day" 
+   		    android:gravity="left|center_vertical" 
+   		    android:paddingLeft="30dp" 
+   		    android:textSize="24dp" />
+   		    
+   		<Button
+   		    android:id="@+id/sunset"
+   		    android:layout_width="match_parent"
+   		    android:layout_height="wrap_content"
+   		    android:background="@drawable/banner_sunset"
+   		    android:paddingTop="10dp" android:text="Sunset" android:gravity="left|center_vertical" android:paddingLeft="30dp" android:textSize="24dp"/>
+    
+   		<Button
+   		    android:id="@+id/sunrise"
+   		    android:layout_width="match_parent"
+   		    android:layout_height="wrap_content"
+   		    android:background="@drawable/banner_sunrise" android:text="Sunrise" android:gravity="left|center_vertical" android:paddingLeft="30dp" android:textSize="24dp"/>
+    
+   		<Button
+   		    android:id="@+id/night"
+   		    android:layout_width="match_parent"
+   		    android:layout_height="wrap_content"
+   		    android:background="@drawable/banner_night" android:text="Night" android:gravity="left|center_vertical" android:paddingLeft="30dp" android:textSize="24dp"/>
+    
+</LinearLayout>
