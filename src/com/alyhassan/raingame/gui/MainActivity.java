@@ -1,7 +1,7 @@
 package com.alyhassan.raingame.gui;
 
 
-import com.alyhassan.egggame.R;
+import com.alyhassan.raingame.R;
 import com.alyhassan.raingame.user.Background;
 import com.alyhassan.raingame.user.HighScore;
 

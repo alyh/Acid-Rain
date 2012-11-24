@@ -10,7 +10,7 @@ import android.view.Window;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.alyhassan.egggame.R;
+import com.alyhassan.raingame.R;
 import com.alyhassan.raingame.user.HighScore;
 
 public class GardenActivity extends Activity implements OnClickListener{

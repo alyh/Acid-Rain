@@ -12,7 +12,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.alyhassan.egggame.R;
+import com.alyhassan.raingame.R;
 import com.alyhassan.raingame.user.HighScore;
 
 public class PostGameActivity extends Activity implements OnClickListener{

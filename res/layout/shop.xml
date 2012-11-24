@@ -25,7 +25,7 @@
 
    		<Button
    		    android:id="@+id/day"   		   
-   		    android:background="@drawable/banner_day2"
+   		    android:background="@drawable/banner_locked"
    		    android:layout_width="match_parent"
    		    android:layout_height="wrap_content"
    		    android:text="Day" 
@@ -37,19 +37,19 @@
    		    android:id="@+id/sunset"
    		    android:layout_width="match_parent"
    		    android:layout_height="wrap_content"
-   		    android:background="@drawable/banner_sunset"
+   		    android:background="@drawable/banner_locked"
    		    android:paddingTop="10dp" android:text="Sunset" android:gravity="left|center_vertical" android:paddingLeft="30dp" android:textSize="24dp"/>
     
    		<Button
    		    android:id="@+id/sunrise"
    		    android:layout_width="match_parent"
    		    android:layout_height="wrap_content"
-   		    android:background="@drawable/banner_sunrise" android:text="Sunrise" android:gravity="left|center_vertical" android:paddingLeft="30dp" android:textSize="24dp"/>
+   		    android:background="@drawable/banner_locked" android:text="Sunrise" android:gravity="left|center_vertical" android:paddingLeft="30dp" android:textSize="24dp"/>
     
    		<Button
    		    android:id="@+id/night"
    		    android:layout_width="match_parent"
    		    android:layout_height="wrap_content"
-   		    android:background="@drawable/banner_night" android:text="Night" android:gravity="left|center_vertical" android:paddingLeft="30dp" android:textSize="24dp"/>
+   		    android:background="@drawable/banner_locked" android:text="Night" android:gravity="left|center_vertical" android:paddingLeft="30dp" android:textSize="24dp"/>
     
 </LinearLayout>
