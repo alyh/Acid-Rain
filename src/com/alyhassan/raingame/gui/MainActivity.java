@@ -55,7 +55,9 @@ public class MainActivity extends Activity implements OnClickListener{
         title.setTypeface(tf, Typeface.BOLD);
         
         Background.start();
-        HighScore.load();
+        if(!HighScore.load()){
+        	Log.e("egg", "ERROR reading saved data or file missing!");
+        }
         
         LinearLayout background = (LinearLayout)findViewById(R.id.mainLayout);
         background.setBackgroundDrawable(Theme.getBackground(getAssets()));
