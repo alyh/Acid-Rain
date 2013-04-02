@@ -48,46 +48,50 @@ public class HighScore {
 			out.println(highscore);	
 			out.println(total);
 			out.println(Theme.selected);
-			for(int i=0;i<Background.getBackgrounds().size();i++)
-				out.println(Background.getBackgrounds().get(i).isPurchased()?"yes":"no");
 			out.println(games);
 			out.println(totaldrops);
+			
+			for(int i=0;i<Background.getBackgrounds().size();i++)
+				out.println(Background.getBackgrounds().get(i).isPurchased()?"yes":"no");			
 			
 			out.flush();
 			out.close();
 		} catch (FileNotFoundException e) {}
 	}
 	
-	public static void load(){
+	public static boolean load(){
 		File root = new File(Environment.getExternalStorageDirectory() + "/Android/data/com.alyhassan.raingame/");
 		
         File file = new File(root, "user.txt");
         
         if(!file.exists())
-        	return;
+        	return false;
         
         try {
 		    BufferedReader br = new BufferedReader(new FileReader(file));
 		    highscore = Integer.parseInt(br.readLine());		   
 		    total = Integer.parseInt(br.readLine());
 		    Theme.selected = Integer.parseInt(br.readLine());	
-		    for(int i=0;i<Background.getBackgrounds().size();i++){
-		    	if(Background.getBackgrounds().get(i)==null){
-		    		Log.e("egg","Background is null ; "+br.readLine());
-		    	}else{
-		    		Background.getBackgrounds().get(i).setPurchased(br.readLine().equals("yes"));
-		    	}
-		    }
 		    String s = br.readLine();
 		    games = Integer.parseInt(s==null?"0":s);
 		    s =  br.readLine();
 		    totaldrops = Integer.parseInt(s==null?"0":s);
 		    
+		    for(int i=0;i<Background.getBackgrounds().size();i++){
+		    	if(Background.getBackgrounds().get(i)==null){
+		    		Log.d("egg","Background is null ; "+br.readLine());
+		    	}else{
+		    		Background.getBackgrounds().get(i).setPurchased(br.readLine().equals("yes"));
+		    	}
+		    }		    
 		}catch (IOException e) {
+			return false;
 		}catch (NullPointerException e){
-			Log.e("egg","Null pointer exception!");
+			return false;
+		}catch (NumberFormatException e){
+			return false;
 		}
-
+        return true;
 	}
 
 }
